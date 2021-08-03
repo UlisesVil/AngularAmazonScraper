@@ -1,0 +1,17 @@
+<h1>Amazon Products</h1>
+
+<div class="generalProdCont">
+
+  <a class="card" *ngFor="let product of products"  href="{{product.url}}" target="_blank">
+
+      <p class="textProduct"> {{product.title}}</p>
+      <img class="imgProduct" src="{{product.image}}" alt="">
+      <p class="textProduct" *ngIf="product.price">{{product.price}}</p>
+      <p class="textProduct" *ngIf="product.priceAlt">{{product.priceAlt}}</p>
+      <p class="textProduct" *ngIf="product.priceAlt2">{{product.priceAlt2}}</p>
+      <p class="textProduct">{{product.seller}}</p>
+      <p class="textProduct">{{product.features}}</p>
+
+  </a>
+
+</div>
